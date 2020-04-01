@@ -1,0 +1,29 @@
+{
+  "name": "fetcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack -w",
+    "type:check": "tsc -p . --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uruha/PoC_Fetcher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uruha/PoC_Fetcher/issues"
+  },
+  "homepage": "https://github.com/uruha/PoC_Fetcher#readme",
+  "devDependencies": {
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
