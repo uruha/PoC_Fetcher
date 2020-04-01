@@ -14,8 +14,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-        "eslint . --ext .ts,.tsx",
-        "git add"
+      "eslint . --ext .ts,.tsx",
+      "git add"
     ]
   },
   "repository": {
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/uruha/PoC_Fetcher#readme",
   "devDependencies": {
+    "@types/node-fetch": "^2.5.5",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "@typescript-eslint/typescript-estree": "^2.26.0",
@@ -39,9 +40,13 @@
     "husky": "^4.2.3",
     "lint-staged": "^10.1.1",
     "prettier": "^2.0.2",
+    "serve": "^11.3.0",
     "ts-loader": "^6.2.2",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0"
   }
 }
