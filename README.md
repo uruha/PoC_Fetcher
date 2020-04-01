@@ -17,8 +17,15 @@ $ npm run watch
 const fetcher = new Fetcher('https://exmaple.com');
 
 // use Fetcher
+const getOption = {
+    header: {
+        'Content-Type': 'application/json'
+    },
+    mode: 'cors'
+};
+
 fetcher
-    .get('user')
+    .get('user', getOption)
     .then(res => res.json())
     .then(res => console.log(res));
 ```

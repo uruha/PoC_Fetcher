@@ -10,7 +10,7 @@ export default class Fetcher {
         this.domain = apiDomain;
     }
 
-    get(endpoint: Endpoint, opt?: RequestInit) {
+    get(endpoint: Endpoint, opt?: RequestInit = {}) {
         return fetch(`${this.domain}/${endpoint}`, opt);
     }
 
